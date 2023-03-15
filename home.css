@@ -1,0 +1,49 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color:var(--my-color)
+  
+
+}
+:root{
+    --my-color:#fff;
+    --my-font:font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+.navlist{
+    background: yellow;
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.corpo{
+    background: blue;
+    height: 435px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+   
+}
+.greeting{
+    background: #a2a2a2;
+    height: 435px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  
+  
+}
+.social-midia{
+  background: green;
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
