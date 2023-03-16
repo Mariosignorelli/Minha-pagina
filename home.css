@@ -5,45 +5,68 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    outline: none;
 }
 .container{
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    color:var(--my-color)
-  
+       width: 100vw;
+    height: 100vh;
+  background-image: url(./img/mario-font4.png);
+  background-repeat: no-repeat;
+  background-position: start;
+  background-size: cover;
+  cursor: pointer;
 
 }
 :root{
     --my-color:#fff;
     --my-font:font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
-.navlist{
-    background: yellow;
-    height: 100px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.navlist{ 
+    display: flex;
+    justify-content: end;
+    align-items: safe;
+    
+    
+}
 
+.list{  
+    height: 70px;
+    position: relative;
+    right: 35px;
+}
+
+
+.elementeList li {
+    margin-top: 35px;
+    margin-left: 25px;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.elementeList a{
+    color: var(--my-color);
+    text-transform: none;
+    text-decoration: none;
+    transition: all 2s;
+    padding: 5px;
+}
+.elementeList a:hover{
+    box-shadow: 5px 5px 10px 3px rgba(255, 255, 255, 1);
+
+-webkit-box-shadow: 5px 5px 10px 3px rgba(255, 255, 255, 1);
+
+-moz-box-shadow: 5px 5px 10px 3px rgba(255, 255, 255, 1);
 }
 .corpo{
-    background: blue;
-    height: 435px;
-    grid-column-start: 1;
-    grid-column-end: 2;
   
    
 }
 .greeting{
-    background: #a2a2a2;
-    height: 435px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  
+
+
   
 }
 .social-midia{
-  background: green;
-    height: 100px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+
 }
